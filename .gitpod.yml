@@ -1,0 +1,10 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Install ns-3
+    init: |
+      bash install.sh
+    command: |
+      cd ns-3-dev
+      ./ns3 run lena-simple
